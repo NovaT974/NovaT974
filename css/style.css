@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+  color:#1e1e1e;
+  background: #eee;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/***********************
+		HEADER AVEC LOGO
+*************************/	
+		
+header{
+
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0.75)
+        ), url('../img/bg.png') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    height: 600px;
+	color:#fff; 
+} 
+.navbar ul li a{
+	font-family: "Lobster Two", sans-serif;
+}
+.sep {
+	border: 1px solid #ccc;
+	width: 70px; 	
+}
+/******** TEXT ANIME *********/
+
+.anim{
+	animation: pulse 3s ease-in-out;
+} 
+.button{
+	background:#D46A6A; 
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+
+} 
+
+.button:hover{
+	background:none; 
+	border: 2px solid #fff;
+}
+
+@keyframes pulse {
+	0% {
+	  opacity:0;
+	}
+	100% {
+		opacity:1;
+	}		
+}
+
+
+
+/*******************************
+		BODY
+*******************************/		
+
+
+hr{
+	background: #D46A6A;
+	border: 3px solid #D46A6A;
+	width: 70px; 
+} 
+
+h2{
+	font-family: 'Lobster Two', cursive;
+	font-size: 30px;
+	color: #082330;
+}
+
+
+/*******************************
+		FORMULAIRE CONTACT
+*******************************/	
+
+
+/*******************************
+		FOOTER
+*******************************/	
+
+footer {
+	background: #082330;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
