@@ -1,78 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Nova Turpin</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
-</head>
-<body>
 
-	<header> <!-- DEBUT HEADER-->
-		<div id="logo">
-		<h1><img src="img/nova.png" /></h1>
-		</div>
-		<div class="main-menu">
-			<nav>
-				<ul>
-					<li><a href="">Accueil</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">Réalisations</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="text-intro">
-			<h2>Je suis développeuse web</h2>
-			<button type="submit">Contactez-moi</button>
-		</div>
-	</header> <!-- FIN HEADER-->
+    <!--TYPOGRAPHIE-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
+    </head>
 
-	<div class="container"> <!-- DEBUT CONTENU PAGE-->
+  
+  <body>
+      <header>
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <a class="navbar-brand" href="#"><img src="img/nova.png" class="w-100"/></a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active p-2">
+                            <a class="nav-link" href="#accueil">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="#a-propos">A propos</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="#realisation">Réalisations</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="#realisation">Compétences</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
 
-		<section class="section1"> <!-- DEBUT section a propos-->
-			<h2>A propos</h2>
-			<hr/>
-			<p>Victus universis caro ferina est
-			lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
-			frumenti usum et vini penitus ignorantes.ictus universis caro ferina est
-			lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
-			frumenti usum et vini penitus ignorantes.
-			</p>
-		</section> <!-- fin section -->
+            <div class="jumbotron jumbotron-fluid bg-transparent">
+                <div class="container text-center anim">
+                    <p class="lead">Ma spécialité</p>
+                    <hr class="sep">
+                    <h1 class="display-3">développement web</h1>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg button" href="Jumbo action link" role="button">Contactez-moi</a>
+                    </p>
+                </div>
+            </div>
+         </div>
 
-		<section class="section2"> <!-- DEBUT section realisation-->
-			<h2>Réalisation</h2>
-			<hr/>
-			<p>Victus universis caro ferina est
-				lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
-				frumenti usum et vini penitus ignorantes.ictus universis caro ferina est
-				lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
-				frumenti usum et vini penitus ignorantes.
-			</p>
-		</section> <!-- DEBUT section-->
+      </header>
 
-		<section class="section3"> <!-- DEBUT section contact-->
-			<h2>Contact</h2>
-			<hr/>
-			<form>
-				<label>Nom et prénom: </label>
-				<input type="text" placeholder="Entrez votre nom et prénom" /><br/>
-				<label>Email: </label>
-				<input type="text" placeholder="Entrez votre email" /><br/>
-				<label>Objet: </label>
-				<input type="text" placeholder="Entrez l'objet de votre email" /><br>
-				<label>Objet: </label>
-				<textarea type="textarea" placeholder="Entrez votre message"/></textarea><br>
-				<input type="submit" value="Envoyer"><br>
-				
-			</form>
-		</section> <!-- fin section -->
-	</div>
-	
-	<footer>
-		<p>&copy 2018 | Design réalisé par Nova </p>
-	</footer>
-	
-</body>
+    <main class="mt-5 mb-5 bg-white pt-3">
+        <section id="a-propos" class="container text-center mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <article class="section1"> <!-- DEBUT section a propos-->
+                        <h2>A propos</h2>
+                        <hr/>
+                        <p>Victus universis caro ferina est
+                        lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
+                        frumenti usum et vini penitus ignorantes.ictus universis caro ferina est
+                        lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus 
+                        frumenti usum et vini penitus ignorantes.
+                        </p>
+                    </article> <!-- fin section -->
+                </div>
+            </div>
+        </section>
+        <section id="realisation" class="container mt-5 mb-5">
+            <h2 class="text-center">Mes réalisations</h2>
+            <hr/>
+            <div class="row mt-5">
+                <article class="col-md-4">
+                  <img src="https://picsum.photos/g/200/300" class="w-100" alt="">     
+                </article>
+                <article class="col-md-4">
+                    <img src="https://picsum.photos/g/200/300" class="w-100" alt="">    
+                </article>
+                <article class="col-md-4">
+                    <img src="https://picsum.photos/g/200/300" class="w-100" alt="">    
+                </article>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2018 | Design réalisé par Nova </p>
+    </footer>
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
