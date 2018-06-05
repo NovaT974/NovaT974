@@ -7,15 +7,23 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 19px;
   color:#1e1e1e;
-  background: #eee;
+  /*background: #eee;*/
 }
-
+/*
 main {
 	width: 80%;
 	margin: 0 auto;
 }
 
+*/
 
+/***********************
+	couleurs du site 
+*************************/
+
+.red_pink {
+	color: #D46A6A;
+}
 
 /***********************
 		HEADER AVEC LOGO
@@ -56,7 +64,7 @@ header{
   display: block;
   cursor: pointer;
   padding: 8px 0;
-  margin: 0 20px;
+  margin: 0 15px;
   color: #fff;
   text-decoration: none;
 }
@@ -151,7 +159,120 @@ h2{
 	font-size: 30px;
 	color: #082330;
 }
+/*******************************
+		REALISATION
+********************************/
 
+/*** survol img avec description ****/
+.caption {
+  overflow: hidden;
+  opacity: .99;
+  position: relative;
+  box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.05);
+  display: inline-block
+}
+
+.caption:before {
+  content: '';
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(8, 35, 48, 0.85) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(8, 35, 48, 0.85) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.caption img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.caption .details {
+  font-size: 1em;
+  line-height: 1.1em;
+  padding: 1em;
+  color: #fff;
+  text-shadow: 0px 0px 3px #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.caption .details span {
+  display: block;
+  opacity: 1;
+  position: relative;
+  top: 50%;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.caption .details .title {
+  line-height: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.caption .details .info {
+  line-height: 1.2em;
+  margin-top: 0.25em;
+  font-size: 0.8em;
+}
+ .caption .details span {
+    opacity: 1;
+    top: 100px
+  }
+  .caption:before {
+    opacity: 1;
+    top: 100%
+  }
+  .caption:focus:before,
+  .caption:focus span,
+  .caption:hover:before,
+  .caption:hover span {
+    opacity: 1;
+  }
+  .caption:focus:before,
+  .caption:hover:before {
+    top: 50%;
+  }
+  .caption:focus span,
+  .caption:hover span {
+    top: 0;
+  }
+  .caption:focus .title,
+  .caption:hover .title {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  .caption:focus .info,
+  .caption:hover .info {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+
+  
+ /*******************************
+		SLIDE TEMOIGNAGE
+*********************************/
+
+.carousel-inner {
+	height: 420px;
+}
 
 /*******************************
 		FORMULAIRE CONTACT
