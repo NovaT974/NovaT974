@@ -141,13 +141,6 @@ header{
 	}		
 }
 
-
-
-/*******************************
-		BODY
-*******************************/		
-
-
 hr{
 	background: #D46A6A;
 	border: 3px solid #D46A6A;
@@ -279,7 +272,13 @@ h2{
 /*******************************
 		FORMULAIRE CONTACT
 *******************************/	
-
+.bg-contact {
+	background:linear-gradient(
+        rgba(212, 106, 106, 0.9), 
+        rgba(212, 106, 106, 0.9)
+        ), url('../img/fond-contact.png') no-repeat;
+	background-size: cover;
+}
 
 /*******************************
 		FOOTER
