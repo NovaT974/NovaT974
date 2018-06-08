@@ -162,7 +162,10 @@ h2{
   opacity: .99;
   position: relative;
   box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.05);
-  display: inline-block
+  display: inline-block;
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(230,225,230,1);
+-moz-box-shadow: 8px 8px 5px 0px rgba(230,225,230,1);
+box-shadow: 8px 8px 5px 0px rgba(230,225,230,1);
 }
 
 .caption:before {
@@ -269,6 +272,13 @@ h2{
 	height: 450px;
 }
 
+.title_testimony {
+  font-size: 40px;
+}
+.img_testimony {
+  width: 150px;
+  height: 150px;
+}
 /*******************************
 		FORMULAIRE CONTACT
 *******************************/	
@@ -278,6 +288,9 @@ h2{
         rgba(212, 106, 106, 0.9)
         ), url('../img/fond-contact.png') no-repeat;
 	background-size: cover;
+}
+.icon_contact{
+  font-size: 45px;
 }
 
 /*******************************
